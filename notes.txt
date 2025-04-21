@@ -3,3 +3,6 @@ I already did some tests with compiling latex files from the command line.
 For that, I installed MikTex, from some minor research I did. From sth
 I saw now, maybe the best option for MacOS is MacTex, but I'll continue
 with MikTex for now, as the I already have it.
+
+Some cli tools are already installed, like `pdfLatex` and `bibtex`, though
+I'm not sure if those are all, or where the libraries are installed.
