@@ -16,3 +16,9 @@ shown in `https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler`.
 I was searching more a simple command line set of tools, which I could use
 consiously for the compilation and library management, but I think I will
 not scape from GUI stuff for now.
+
+Now I will try to set up a simple document to compile with the distro
+I have, understand the workflows of the distro, and then, continue with
+this tutorial/revision for latex `https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_(part_1)`.
+To go over a review of how it works (as I didn't use it for quite some time)
+now.
