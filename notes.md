@@ -33,3 +33,15 @@ with that, and copy it to this new directory.
 
 No understanding of the Latex compiler distro distribution was done, will just use the cli
 available
+
+Write .tex files, and compile it with the commands documented, fine without libs
+
+To install a lib (using miktex):
+1. start miktex console (from launchpad in MacOS)
+2. click packages
+3. sort the list view by column Installed on to make the following easy
+4. select the packages which are not installed
+5. click the add button to start the installation
+
+This happend with amsmath, but just because I am somewhat dislexic, and wrote asmath
+everywhere.
