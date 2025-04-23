@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
-
+\usepackage{natbib}
 
 \title{The title}
 
@@ -67,6 +67,13 @@ Widget  & 1         & 199.99    \\
 Gadget  & 2         & 399.99    \\
 Cable   & 3         & 10.99     \\\hline
 \end{tabular}
+
+
+\citet{Brooks1997Methodology} shows that \ldots. Clearly all odds numbers
+are prime \citep{Jacobson1999Towards}
+
+\bibliography{bibliography}
+\bibliographystyle{plainnat} % style is mandatory for proper compilation
 
 
 \end{document}

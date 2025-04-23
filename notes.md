@@ -45,3 +45,7 @@ To install a lib (using miktex):
 
 This happend with amsmath, but just because I am somewhat dislexic, and wrote asmath
 everywhere.
+
+For compiling stuff with bibliography, you have to run the bibtex command (wtf?)
+
+run: pdflatex -> bibtex -> pdflatex -> pdflatex. Thats what's in the compile script
