@@ -1,6 +1,8 @@
 \documentclass{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{natbib}
+
 
 \title{The title}
 
@@ -11,7 +13,7 @@
 \begin{document}
 
 \maketitle
-
+\tableofcontents
 
 \begin{abstract}
 \label{sec:abstract}
@@ -71,6 +73,13 @@ Cable   & 3         & 10.99     \\\hline
 
 \citet{Brooks1997Methodology} shows that \ldots. Clearly all odds numbers
 are prime \citep{Jacobson1999Towards}
+
+Define a new command: slash-text command is in amsmath package
+\newcommand{\rperf}{\rho_{\text{sth}}}
+
+$\rperf$
+
+
 
 \bibliography{bibliography}
 \bibliographystyle{plainnat} % style is mandatory for proper compilation
