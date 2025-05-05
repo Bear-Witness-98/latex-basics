@@ -1,0 +1,490 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.4, 13 Nov 2021) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkGreen}{HTML}{254117}
+\definecolor{MediumGreen}{HTML}{12AD2B}
+\definecolor{LightGreen}{HTML}{9DC209}
+\colorlet{name}{black}
+\colorlet{tagline}{MediumGreen}
+\colorlet{heading}{DarkGreen}
+\colorlet{headingrule}{LightGreen}
+\colorlet{subheading}{MediumGreen}
+\colorlet{accent}{MediumGreen}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+\input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{bibliography.bib}
+
+\begin{document}
+\name{Santiago Suárez}
+\tagline{Electrical Engineer from \href{https://www.fing.edu.uy/}{Universidad de la República} \& Machine Learning Engineer at \href{https://tryolabs.com/}{Tryolabs}}
+%% You can add multiple photos on the left or right
+%\photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{santisuarezpungitore@hotmal.com}
+  \phone{+(598) 096 001 320}
+  \location{Montevideo, URUGUAY}
+  \linkedin{santiago-suarez-pungitore}
+  \github{Bear-Witness-98}
+  
+  %\NewInfoField{gitlab}{\faGitlab}[https://gitlab.fing.edu.uy/]
+  %\gitlab{santiago.suarez.pungitore}
+  
+  
+  
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  
+
+  
+  
+  
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.5}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+
+
+
+\cvsection{Education}
+
+\cvevent{Engineering Degree in Electrical Engineering, \\
+% 5-year program, equiv. to M.Sc., \\
+\textcolor{black}{\textbf{Top 2}} of generation (\textbf{\textcolor{black}{Top 1\%}})}{Universidad de la República, Uruguay}{2017 -- 2022}{}
+Specialised on Signal Processing, Machine Learning and Embedded Systems.
+
+\smallskip
+Strong theoretical background on Mathematics, Physics and Computer Science.
+
+
+
+\cvsection{Work Experience}
+
+\cvevent{Machine Learning Engineer}{TryoLabs; AI-specialised consulting \& dev. company}{March 2022 -- Ongoing}{Montevideo, Uruguay}
+\begin{itemize}
+    \item Developer in a wide variety of  Data-and-AI-based technology consultancy projects, mainly for clients in the United States. 
+    \item Involved in the requirements analysis, design and implementation of results-oriented software solutions. 
+    \item Direct contact with business stakeholders is the norm, demanding excellent communication skills.
+    \item Involved in internal developement activities such as research, knowledge sharing meetings, onboardings and hirings.
+\end{itemize}
+
+\smallskip
+
+\cvevent{Secondary School Teacher}{Instituto Preuniversitario Juan XXIII; secondary school}{April 2019 -- Ongoing}{Montevideo, Uruguay}
+\begin{itemize}
+    \item Teacher of mathematics courses for students aged 16 to 18. Involved in test preparation, grading, and lecture delivery.
+\end{itemize}
+
+\smallskip
+
+\cvevent{University Research \& Teaching Asisstant}{Unversidad de la República; applied electronics \\department}{March 2021 -- March 2022}{Montevideo, Uruguay}
+\begin{itemize}
+
+    \item Contributed at department's R\&D projects developed for clients.
+
+    \item Teacher of 'Digital Electronics' and 'Microcontrollers' courses. Involved in test preparation, grading, and lecture delivery.
+
+    
+\end{itemize}
+
+
+
+\cvsection{Key Skills}
+
+\cvtag{Hard-working}
+\cvtag{Independent}
+\cvtag{Eye for detail}
+\\
+\cvtag{Enthusiast}
+\cvtag{Responsible}
+\cvtag{Adaptable}
+\cvtag{Team-worker}
+\\
+
+\medskip
+
+\cvtag{Python}
+\cvtag{C/C++}
+\cvtag{Bash}
+\cvtag{Git}
+\cvtag{Linux}
+\cvtag{Cuda}\\
+\cvtag{Machine Learning}
+\cvtag{Assembly}
+\cvtag{Embedded C}
+\cvtag{SQL}\\
+
+
+
+
+
+\newpage
+
+\cvsection{Project Experience}
+
+\cvevent{Engine degradation prediction with ML model}{Tryolabs}{May 2024 - July 2024}{}
+
+Developed an end-to-end machine learning pipeline to predict engine degradation in vehicles over time. The model is able to detect engine's failure state 4 hour in advance on lab data. Analysed more than 1000 CAN signals available from the vehicle's electronic system, did an evaluation of their importance on the prediction, and trained an XGBoost model with the most relevant ones. Regular interaction with SMEs was key to interpret the importances correctly. The end goal is to deploy this model on an edge device in a working vehicle, some optimisations were done for this purpose.
+
+
+\bigskip
+
+\cvevent{Benchmark of DSP-based embedded devices for ML applications.}{Tryolabs}{February 2023 - April 2023}{}
+
+Benchmarked DSP-based dual core microcontrollers for machine-learning-specific tasks. Two double core devices were benchmarked, for both of their cores, giving estimates of execution time and memory print for a number of simple transcendental operations, and for complete ML models. The benchmarking was done using C++ libraries specific for machine learning tasks on resource constrained devices. NatureDSP and NNLib for basic operations, and TensorFlow-lite for microcontrollers for full inference of Neural Networks. Compilation and linking options were deeply studied and tested, to ensure correctness and repeatability of results.
+
+\bigskip
+
+
+
+\cvevent{PicassobotZ, a human-like robotic artist}{Degree´s final project}{April 2021 - may 2022}{}
+Assembled and programmed a robotic, servo-based arm that can draw a picture taken of a human face. The arm could draw faces satisfactory, with a human-like execution of the drawing. Assembled the embedded system and electronics needed to program and control the servos in real time. Developed and implemented an algorithm to plan and control the arm movement using modern mathematical tools, achieving the sensation of human-like execution in the drawing process. Implemented the image processing needed to obtain meaningful curves from a given image of a human face. The code needed was implemented in Python and C++.  
+
+\bigskip
+
+\cvevent{Marketing personalisation}{Tryolabs}{April 2023 - August 2022}{}
+
+Contributed in the digital journey of big retail company from the US. Explored massive data sets ($\sim$1B rows) for insights on the effects of email sending frequency on the client's engagement. Also used these insights to develop a look-alike ML model, tool to detect behavioural patterns on clients. Most of the work was done using SQL and Python on VertexAI and BigQuery.
+
+\bigskip
+
+
+\newpage
+
+\cvsection{Project Experience (cont.)}
+
+\cvevent{Appliance identification from electrical consumption
+measurements}{Universidad de la República, course final project}{August 2019 - December 2019}{}
+Built a device to measure voltage and current consumption
+of household appliances. Trained and evaluated
+machine learning algorithms (random forest, knn, multilayer
+perceptron) to recognise the appliances based on
+the collected data.
+
+\bigskip
+
+\cvevent{Personal projects and studies}{Personal}{Ongoing}{}
+\begin{itemize}
+    \item Studied and Implemented Physically-informed-nerual-networks. Build nets from scratch, and visualised their fitting to a solution of a differential equation.
+    \item Investigated and implemented multiple binding methods between Python and C. The main objective was to understand how to accelerate python code by delegating some processing to a high-performance C kernel. Implemented and tested around 5 binding methods, with a general enough template to accelerate any operatio needed.
+    \item Studied advanced linear algebra, particularly, tensor algebra. Interested in it for their wide usage in Physics and Machine Learning.
+    \item Learned basic CUDA. Cuda Fundamentals certification unfinished.
+    \item Tested multiple connecting devices in my home network, under the rounter. Could connect with a terminal in my phone, through the internet, to a server in my home.
+\end{itemize}
+
+\newpage
+
+\cvsection{Achievements}
+
+
+\cvachievement{\faTrophy}{Jury at the National Mathematics Olympiad}{In the years 2018 and 2017}
+
+\medskip
+
+\cvachievement{\faTrophy}{$\mathbf{2^{nd}}$ place at the National Mathematics Olympiad}{In the years 2016, 2015 and 2013}
+
+\medskip
+
+\cvachievement{\faTrophy}{$\mathbf{3^{rd}}$ place at the National Mathematics Olympiad}{In the year 2014}
+
+\medskip
+
+\cvachievement{\faTrophy}{Participation in the "Olimpiada matemática Rioplatense" Latin American mathematics Olympiad}
+{In the years 2013-2016, hosted in Argentina}
+
+\medskip
+
+\cvsection{Conferences}
+
+\cvachievement{\faComment}{KHIPU 2025 Tryolabs' representative}{Latin American Meeting In Artificial Intelligence. Pitched Tryolabs to the attendees. Worked on networking.}
+
+\cvachievement{\faComment}{IEEE LASCAS 2024 speaker}{Latin American symposium on circuits and systems. Presented paper based on undergrad's thesis.}
+
+\cvachievement{\faComment}{KHIPU 2023 Tryolabs' booth representative}{Latin American Meeting In Artificial Intelligence. Presented a computer-vision-based squat counter working on a raspberry pi. Worked on networking.}
+
+\medskip
+
+\cvsection{Science Communication}
+
+\cvachievement{\faComment}{Interviewed in "\href{https://www.youtube.com/watch?v=GpqZDZCwQLU}{Sobre ciencia}"}{Uruguayan science communication TV program, interviewed about undergrad thesis.}
+
+\smallskip
+
+\cvachievement{\faComment}{Speaker at "\href{https://www.youtube.com/watch?v=KPXaGyMsYig}{Sumo Robotico}"}{Yearly championship of robotics, focused on the communication and education of robotics, electronics and programming.}
+
+\smallskip
+
+\cvachievement{\faComment}{Presenter at "\href{https://idm.uy/}{Ingeniería de Muestra}"}{Yearly university fair, in which projects from all the university are presented to the general public. Presented undergrad's thesis (2022) and electrical engineering workshop's final project (2017)}
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\cvsection{Profile summary}
+
+\begin{quote}
+
+Science-oriented electrical engineer; eager to apply my practical and theoretical knowledge to push the frontier of science and technology. Adventure seeker, looking to travel the world in search for wisdoms from different peoples and \\ cultures. 
+\end{quote}
+
+\bigskip
+
+
+\cvsection{Publications}
+
+\nocite{*}
+
+
+
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Thesis}},type=proceedings]
+
+\bigskip
+
+\cvsection{Languages}
+
+
+\cvskill{Spanish (native)}{5}
+\divider
+
+\cvskill{English}{5}
+\divider
+
+\cvskill{Japanese}{1}
+
+\bigskip
+
+
+\cvsection{Certifications}
+
+\cvevent{C2 Certificate of Proficiency in English (CPE)}{Cambridge University, England}{2017}{}
+
+
+\cvevent{Japanese Language Proficiency Test (JLPT) N5}{Japan Foundation, Japan}{2022}{}
+
+\newpage
+
+
+\cvevent{Large-scale MLOps platform development, consulting and promoting}{Tryolabs - LATAM Airlines}{August 2024 -- Ongoing}{}
+
+Enhanced LATAM Airlines' Data and AI Operations team as part of Tryolabs. Was part of multiple initiatives, due to the highly-variable needs of such a big company. Some of the initiatives were:
+
+\begin{itemize}
+    \item Contributed in the development and promotion of usage of internal large-scale MLOps and Data Analytics tool. This tool is a framework for easy and standard development, deployment and monitoring of products in google cloud's environments. It leverages technologies gallore, from standard development (python, makefiles, SQL, ci/cd) to infrastructure management (terraform, kubernetes, kubeflow). Most components of the tool look to abstract certain functionalities from multiple GCP's services (BigQuery, CloudRun, CloudBuild, and others), and service them with ease to data engineers and data scientists.
+    \item Regularly communicated and coordinated with multiple stakeholders inside the company. Involved in narrowing the distance between the platform team, and the digital business areas. Assessed the pains and needs of the bigger Data and Analytics Sector, in search for optimisations to be done that impact directly on LATAM's revenue.
+    \item Technical lead for an initiative to parse invoices through the use of a multimodal LLM. Reconcile the needs from different areas (business and platform) to offer an impactful solution.
+\end{itemize}
+
+\bigskip
+
+\cvevent{Infrastructure development for deploying custom-optimised LLMs}{Tryolabs}{May 2023 - May 2024}{}
+
+Contributed as part of an international team to develop a production-ready system for inference-optimised Transformers-based AI models. Adapted and integrated a wide variety of SOTA technologies for such a system's build, test, and deployment processes. Regularly met with the team to discuss appropriate paths for system integration and technology leverage.
+
+\bigskip
+
+
+\cvevent{Computer-vision-based squat counter}{Tryolabs}{January 2023 - February 2023}{}
+
+Worked on the development of a computer-vision-based squat counter, to run on a raspberry pi and camera system. Improved maximum fps reached by the system by leveraging the architecture-specific tensorflow-lite backend XNNPack. Final system got presented at KHIPU, Latin American meeting in artificial intelligence.
+
+\bigskip
+
+\newpage
+
+\cvevent{Human activity recognition using 
+machine learning techniques in a low-resource embedded system}{Universidad de la República, R\&D Project}{May 2021 - July 2021}{}
+Developed a wearable device based on an MSP430 microcontroller capable of detecting the activity being done by its user (running, walking or staying still). Programmed the device`s firmware to retrieve data from an extrenal accelerometer, and predict the state with such data. Prediction was made in real time with a data-based dimensionality reduction and classifier. Both algorithms were previously trained with collected data from the same device.
+
+\bigskip
+
+
+
+\cvevent{Guitar chord detection using computer vision}{Universidad de la República, course final project}{October 2020 - December 2020}{}
+Developed a computer vision software that retrieves the chord being played by a guitarist. Full Python implementation, heavily leveraging OpenCV,  using edge detection, line detection, and colour segmentation algorithms.
+
+
+
+\bigskip
+
+\cvevent{Air quality measurement devices for classrooms}{Universidad de la República, Applied Electronics Department}{July 2021 -- March 2022}{}
+Built a Micro:Bit based network to measure CO2 in various classrooms of a public school. Thoroughly searched the CO2 measuring sensor´s world market. Assembled the electronics to communicate the sensor with the board. Evaluated and implemented a network communication protocol in the devices using the Zephyr RTOS implementation of BLE.
+
+\bigskip
+
+
+
+
+\newpage
+
+
+
+
+
+%% Supports X.5 values.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+
+
+
+% \divider
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
+
+
+
+\cvsection{Community Service}
+
+\cvachievement{\faDove}{Oratorio Cordón}{Educator at Salesian centre for disadvantaged kids and teenagers. Years 2016-2021}
+
+\medskip
+
+\cvsection{Other Activities}
+
+\cvachievement{\faTheaterMasks[regular]}{Drama club}{In Juan XXIII alumni centre, with nationally famous drama teacher. Years 2018-2021}
+
+\cvachievement{\faTree[regular]}{Camp and festival organizer}{Organised and executed festivals, camps, and field trips for 100+ teenagers from Juan XXIII high school. Years 2017-2019}
+
+\cvachievement{\faFootballBall[regular]}{Rugby player}{Played in school's rubgy team through all my primary and secondary education. Years 2004-2016}
+
+\medskip
+
+
+\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+\cvref{Prof.Dr. Pablo Monzón}{Systems and Control department, FING, UDELAR}{monzon@fing.edu.uy}
+{J. Herrera y Reissig 565, C.P. 11300 \\ Montevideo, Uruguay}
+
+\divider
+
+\cvref{Prof.Dr. Juan Pablo Oliver}{Applied Electronics department, FING, UDELAR}{jpo@fing.edu.uy}
+{J. Herrera y Reissig 565, C.P. 11300 \\ Montevideo, Uruguay}
+
+
+\end{paracol}
+
+
+\end{document}
