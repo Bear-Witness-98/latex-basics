@@ -49,3 +49,7 @@ everywhere.
 For compiling stuff with bibliography, you have to run the bibtex command (wtf?)
 
 run: pdflatex -> bibtex -> pdflatex -> pdflatex. Thats what's in the compile script
+
+For whatever reason, the Template I use for my CV should be run with:
+
+pdflatex sample.tex -> biber sample -> pdflatex sample.tex -> pdflatex sample.tex
