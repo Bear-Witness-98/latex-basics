@@ -53,3 +53,5 @@ run: pdflatex -> bibtex -> pdflatex -> pdflatex. Thats what's in the compile scr
 For whatever reason, the Template I use for my CV should be run with:
 
 pdflatex sample.tex -> biber sample -> pdflatex sample.tex -> pdflatex sample.tex
+
+This appears to be due to the backend used to treat the bibliography.
